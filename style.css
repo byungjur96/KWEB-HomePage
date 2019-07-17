@@ -1,0 +1,87 @@
+/* 레이아웃 */
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+html, body {
+	width: 100%;
+	margin: 0;
+}
+
+h2 {
+	margin-top: 0;
+}
+
+.page {
+	width: calc(100% - 60px);
+	padding: 30px;
+}
+
+.page:nth-child(2n) {
+	background-color: #f0f0f0;
+} 
+/* 레이아웃 끝 */
+
+/* 타이틀 */
+#title {
+	height: 100vh;
+	padding-bottom: 0!important;
+	background-image: url("./title.jpg");
+	background-size: cover;
+	background-color: #393939;
+  	background-blend-mode: overlay;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#title > h1 {
+	font-family: 'NanumSquare', sans-serif;
+	font-size: 48px;
+	color: white;
+}
+
+.logo {
+	height:200px;
+	opacity: 0.7;
+	margin: 20px;
+	
+}
+
+.kweb-explanation {
+	font-family: 'Nanum Gothic', sans-serif;
+	text-align: center;
+	margin-top: 50px;
+	color: #f0f0f0;
+	line-height: 1.5em;
+}
+/* 소개 끝 */
+
+/* Curriculum */
+.curriculum-img {
+	width: 100%;
+}
+
+.curriculum-table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.curriculum-table th,td {
+	border: solid 1px black;
+	padding: 5px;
+}
+
+/* 네트워킹 */
+.card-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.card {
+	width: calc(100%/3 - 20px);
+}
+
+.card > img {
+	width: 100%;
+}
