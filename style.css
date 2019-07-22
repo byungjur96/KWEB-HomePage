@@ -87,3 +87,7 @@ h2 {
 .card > img {
 	width: 100%;
 }
+
+.card > div {
+	text-align: center;
+}
