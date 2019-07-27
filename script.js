@@ -17,6 +17,7 @@ function memoUpload() {
             <span class="memo-date">${time}</span>
             </div><hr>`; 
         document.getElementById("memo-list").innerHTML = memoList;
+        document.getElementById("memo").value = "";
     }
 }
 
