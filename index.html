@@ -67,12 +67,16 @@
 	<!-- 네트워킹 끝 -->
 	
 	<!-- 방명록 -->
-	<div class="page">
+	<div class="page" id="guest-memo">
 		<h2>Guest Memo</h2>
-		<textarea name="memo" id="memo" cols="80" rows="10"></textarea>
+		<div id="memo-list"></div>
+		<textarea name="memo" id="memo" cols="80" rows="10" placeholder="방명록을 작성해보세요!"></textarea>
 		<br>
-		<button>Send</button>
+		<span><span id="memo-len">0</span>/400</span>
+		<button id="upload-btn">Send</button>	
 	</div>
+	<!-- 방명록 끝 -->
 	<div id="footer"></div>
+	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
