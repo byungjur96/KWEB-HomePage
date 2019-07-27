@@ -6,6 +6,13 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
+	<!-- 네비게이션바 -->
+	<div id="nav-bar">
+		<span class="nav-title">Welcome to KWEB!</span>
+		<a href="#curriculum" class="nav-category">Curriculum</a>
+		<a href="#networking" class="nav-category">Networking</a>
+		<a href="#guest-book" class="nav-category">guest Book</a>
+	</div>
 	<!-- 대문 -->
 	<div class="page" id="title">
 		<h1>Welcome To KWEB!</h1>
@@ -19,7 +26,7 @@
 	<!-- 대문 끝 -->
 
 	<!-- Curriculum -->
-	<div class="page">
+	<div class="page" id="curriculum">
 		<h2>Curriculum</h2>
 		<img src="./curriculum.jpg" class="curriculum-img" alt="">
 		<table class="curriculum-table">
@@ -47,7 +54,7 @@
 	</div>
 
 	<!-- 네트워킹 -->
-	<div class="page">
+	<div class="page" id="networking">
 		<h2>Networking</h2>
 		<div class="card-container">
 			<div class="card">
@@ -67,8 +74,8 @@
 	<!-- 네트워킹 끝 -->
 	
 	<!-- 방명록 -->
-	<div class="page" id="guest-memo">
-		<h2>Guest Memo</h2>
+	<div class="page" id="guest-book">
+		<h2>Guest Book</h2>
 		<div id="memo-list"></div>
 		<textarea name="memo" id="memo" cols="80" rows="10" placeholder="방명록을 작성해보세요!"></textarea>
 		<br>

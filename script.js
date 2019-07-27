@@ -1,5 +1,6 @@
-let guestMemo = document.getElementById("guest-memo");
+let guestBook = document.getElementById("guest-book");
 let uploadBtn = document.getElementById("upload-btn");
+let categories = document.getElementsByClassName("nav-category");
 
 function countLength() {
     let text = document.getElementById("memo").value;
@@ -31,5 +32,22 @@ function addMemo(text) {
     document.getElementById("memo-list").innerHTML = memoList;
 }
 
-guestMemo.addEventListener('keyup', () => countLength());
+function stickyNav() {
+    let nav = document.getElementById("nav-bar");
+    let landingHeight = document.getElementById("title").offsetHeight - 64;
+    if (landingHeight < document.scrollingElement.scrollTop) {
+        nav.classList.add("down-nav");
+    }
+    else {
+        nav.classList.remove("down-nav");
+    }
+}
+
+stickyNav();
+guestBook.addEventListener('keyup', () => countLength());
 uploadBtn.addEventListener('click', () => memoUpload());
+document.addEventListener('scroll', () => stickyNav());
+for (category of categories) {
+    
+    category.addEventListener('click', () => stickyNav());
+}
