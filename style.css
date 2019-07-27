@@ -91,3 +91,21 @@ h2 {
 .card > div {
 	text-align: center;
 }
+/* 네트워킹 끝 */
+
+/* 방명록 */
+.guest-memo {
+	width: calc(100% - 40px);
+	word-break:break-all;
+	word-wrap:break-word;
+	padding: 20px;
+	margin-bottom: 10px;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+.memo-date {
+	font-size: 14px;
+	color: darkgray;
+}
+/* 방명록 끝 */
