@@ -77,10 +77,11 @@
 	<div class="page" id="guest-book">
 		<h2>Guest Book</h2>
 		<div id="memo-list"></div>
-		<textarea name="memo" id="memo" cols="80" rows="10" placeholder="방명록을 작성해보세요!"></textarea>
-		<br>
-		<span><span id="memo-len">0</span>/400</span>
-		<button id="upload-btn">Send</button>	
+		<div class="memo-input">
+			<textarea name="memo" id="memo" placeholder="방명록을 작성해보세요!"></textarea>
+			<span class="memo-len-box"><span id="memo-len">0</span>/400</span>
+			<button id="upload-btn">Send</button>	
+		</div>
 	</div>
 	<!-- 방명록 끝 -->
 	<div id="footer"></div>
